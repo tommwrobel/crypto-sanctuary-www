@@ -1,20 +1,77 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/ui/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "960px",
+      lg: "1280px",
+      xl: "1420px",
+    },
     extend: {
+      backdropBlur: {
+        xs: "2px",
+      },
+      fontSize: {
+        base: "0.875rem",
+        xs: "0.75rem",
+        sm: "0.8125rem",
+        lg: "1rem",
+        xl: ["1.25rem", "1.7rem"],
+        "2xl": ["1.5rem", "1.8rem"],
+        "3xl": ["2.5rem", "3rem"],
+        "4xl": ["3.2rem", "3.7rem"],
+      },
+      colors: {
+        primary: { ...colors.indigo, DEFAULT: colors.indigo[600] },
+        secondary: { ...colors.fuchsia, DEFAULT: colors.fuchsia[600] },
+
+        success: { ...colors.emerald, DEFAULT: colors.emerald[600] },
+        warning: { ...colors.amber, DEFAULT: colors.amber[600] },
+        danger: { ...colors.rose, DEFAULT: colors.rose[600] },
+        neutral: { ...colors.slate, DEFAULT: colors.slate[600] },
+
+        bgColor: {
+          light: colors.indigo[800],
+          DEFAULT: colors.indigo[900],
+          dark: colors.indigo[950],
+        },
+        borderColor: {
+          light: `${colors.slate[100]}6A`,
+          DEFAULT: `${colors.slate[100]}44`,
+          dark: `${colors.slate[100]}1A`,
+        },
+        textColor: {
+          light: colors.slate[100],
+          DEFAULT: colors.slate[300],
+          dark: colors.slate[400],
+        },
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "bg-element": "url('/images/bg-element.png')",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": {
+            transform: "rotate(-12deg)",
+          },
+          "50%": {
+            transform: "rotate(12deg)",
+          },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
