@@ -67,9 +67,18 @@ const config: Config = {
             transform: "rotate(12deg)",
           },
         },
+        jump: {
+          "0%, 100%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.2)",
+          },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
+        jump: "jump 300ms ease-in-out infinite",
       },
     },
   },
