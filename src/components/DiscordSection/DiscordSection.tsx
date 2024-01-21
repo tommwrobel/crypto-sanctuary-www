@@ -1,89 +1,31 @@
 "use client";
 import useTranslation from "next-translate/useTranslation";
-import { useEffect, useRef, useState } from "react";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { Section } from "../Section/Section";
-import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
-import { useCounter } from "../../hooks/useCounter";
+import { CounterText } from "./CounterText";
 import { Button, Text, Title, cn } from "@/ui";
 
 export const DiscordSection = () => {
   const { t } = useTranslation("home");
 
-  const ref = useRef<HTMLDivElement | null>(null);
-  const va1 = useCounter({ containerRef: ref, endValue: 1000, step: 50 });
-  const val2 = useCounter({ containerRef: ref, endValue: 250, step: 10 });
-  const val3 = useCounter({ containerRef: ref, endValue: 480, step: 20 });
-  const val4 = useCounter({ containerRef: ref });
-
   return (
-    <Section className="bg-bgColor-dark relative">
-      <div
-        ref={ref}
-        className="flex flex-col md:flex-row max-w-screen-xl px-16 mx-auto gap-16"
-      >
-        <div
-          ref={ref}
-          className="relative order-0 md:order-1 md:flex flex-col basis-1/2 gap-6 justify-center items-center"
-        >
-          <div className="grid grid-cols-2 gap-y-8 md:gap-y-16 gap-x-6">
-            <div className="flex flex-col gap-1 items-center">
-              <Text
-                className={cn(
-                  "text-secondary font-medium text-3xl sm:text-4xl",
-                  va1 < 1000 && "animate-jump"
-                )}
-              >
-                {va1}
-              </Text>
-              <Text className="text-primary-400 text-lg sm:text-xl text-center">
-                signals daily
-              </Text>
-            </div>
-
-            <div className="flex flex-col gap-1 items-center">
-              <Text
-                className={cn(
-                  "text-secondary font-medium text-3xl sm:text-4xl",
-                  va1 < 1000 && "animate-jump"
-                )}
-              >
-                {val2}k$
-              </Text>
-              <Text className="text-primary-400 text-lg sm:text-xl text-center">
-                market value in dollars
-              </Text>
-            </div>
-            <div className="flex flex-col gap-1 items-center">
-              <Text
-                className={cn(
-                  "text-secondary font-medium text-3xl sm:text-4xl",
-                  va1 < 1000 && "animate-jump"
-                )}
-              >
-                {va1}
-              </Text>
-              <Text className="text-primary-400 text-lg sm:text-xl text-center">
-                separate channels
-                <br />
-                with crypto
-              </Text>
-            </div>
-            <div className="flex flex-col gap-1 items-center">
-              <Text
-                className={cn(
-                  "text-secondary font-medium text-3xl sm:text-4xl",
-                  va1 < 1000 && "animate-jump"
-                )}
-              >
-                {val3}
-              </Text>
-              <Text className="text-primary-400 text-lg sm:text-xl text-center">
-                some other stuff
-                <br />
-                with numbers
-              </Text>
-            </div>
+    <Section className="bg-gradient-to-r from-bgColor-dark/50 to-primary-900/50 relative backdrop-blur-xs">
+      <div className="flex flex-col md:flex-row items-center max-w-screen-xl mx-auto gap-16">
+        <div className="relative order-0 md:order-1 md:flex flex-col basis-1/2 gap-6 items-center">
+          <div className="grid grid-cols-2 gap-y-8 md:gap-y-8 gap-x-8 md:gap-x-12 self-center h-full">
+            <CounterText
+              targetValue={48}
+              step={2}
+              description="Active channels"
+            />
+            <CounterText targetValue={2000} description="Some description" />
+            <CounterText
+              targetValue={40}
+              description="Signals per year"
+              endAdornment=" mln"
+              step={2}
+            />
+            <CounterText targetValue={1200} description="Active users daily" />
           </div>
         </div>
         <div className="order-1 md:order-0 flex flex-col md:basis-1/2 gap-12 justify-center items-center md:items-start">

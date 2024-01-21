@@ -75,9 +75,18 @@ const config: Config = {
             transform: "scale(1.2)",
           },
         },
+        bgWiggle: {
+          "0%, 100%": {
+            backgroundPosition: "top right",
+          },
+          "50%": {
+            backgroundPosition: "center left",
+          },
+        }
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
+        bgWiggle: "bgWiggle 20s ease-in-out infinite",
         jump: "jump 300ms ease-in-out infinite",
       },
     },

@@ -11,7 +11,7 @@ export const FooterSection = () => {
     <Section className="py-6 md:py-6">
       <div className="max-w-screen-xl flex flex-col gap-4 md:flex-row items-center justify-between mx-auto">
         <div>
-          <Text>
+          <Text className="text-center">
             {t("FOOTER_SECTION.COPYRIGHT", { year: new Date().getFullYear() })}
           </Text>
         </div>

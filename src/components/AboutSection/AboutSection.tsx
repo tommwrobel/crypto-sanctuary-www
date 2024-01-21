@@ -1,4 +1,4 @@
-import { LuHeartHandshake, LuNewspaper, LuUserPlus } from "react-icons/lu";
+import { LuCandlestickChart, LuHeartHandshake, LuUserPlus } from "react-icons/lu";
 import useTranslation from "next-translate/useTranslation";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { Section } from "../Section/Section";
@@ -18,7 +18,7 @@ export const AboutSection = () => {
           </Text>
         </AboutSectionBox>
         <AboutSectionBox>
-          <LuNewspaper className="text-secondary text-2xl" />
+          <LuCandlestickChart className="text-secondary text-2xl" />
           <Text className="group-hover:text-textColor-light">
             {t("ABOUT_SECTION.TEXT_2")}
           </Text>

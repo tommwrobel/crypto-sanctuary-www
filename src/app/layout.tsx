@@ -17,7 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "bg-bgColor-dark")}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          "bg-bgColor-dark h-screen overflow-hidden"
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

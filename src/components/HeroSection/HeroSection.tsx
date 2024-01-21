@@ -11,8 +11,7 @@ export const HeroSection = () => {
   const { t } = useTranslation("home");
 
   return (
-    <Section className="flex max-w-screen-xl h-[600px] mx-auto flex-row gap-16">
-      <Trans i18nKey="home:test" components={{ strong: <strong /> }} />
+    <Section className="flex max-w-screen-xl h-[600px] mx-auto flex-row gap-16 snap-top">
       <div className="order-1 md:order-0 flex flex-col md:basis-1/2 gap-12 justify-center items-center md:items-start">
         <div className="border border-primary-800 px-3 py-1 rounded-full backdrop-blur-xs">
           <Text size="xs" brightness="dark" className="text-center">
@@ -26,7 +25,13 @@ export const HeroSection = () => {
           {t("HERO_SECTION.TITLE_1")}
           <br />
           <span className="bg-gradient-to-r from-primary-500 to-secondary-500 text-transparent bg-clip-text">
-            {t("HERO_SECTION.TITLE_2")}
+          <Image
+            src="/images/head.png"
+            width={96}
+            height={96}
+            alt=""
+            className="inline mb-1 w-8 h-8 sm:w-10 sm:h-10 animate-wiggle rounded-full border-2 border-secondary mr-2"
+          />{t("HERO_SECTION.TITLE_2")}
           </span>
           !
         </Title>
@@ -56,20 +61,14 @@ export const HeroSection = () => {
       </div>
 
       <div className="hidden md:show order-0 md:order-1 md:flex flex-col basis-1/2 gap-6 justify-center items-center">
-        <div className="p-8 relative border-2 border-secondary w-full h-3/4 rounded-[48px] bg-hero-bg-element2 bg-cover bg-center backdrop-blur-xs">
-          <div className="bg-hero bg-cover bg-no-repeat bg-center rounded-3xl w-full h-full"></div>
-          <Image
-            src="/images/head.png"
-            width={96}
-            height={96}
-            alt=""
-            className="animate-wiggle absolute w-24 h-24 rounded-full -top-12 left-24"
-          />
+        <div className="p-8 relative border-2 border-secondary w-full h-full rounded-[48px] backdrop-blur-xs">
+          <div className="bg-hero bg-cover bg-no-repeat rounded-3xl w-full h-full animate-bgWiggle"></div>
           <div className="absolute w-full h-full overflow-hidden rounded-[48px] left-0 top-0">
             <div className="absolute w-96 h-96 -bottom-36 -right-36 bg-primary rounded-full blur-xl opacity-15 duration-500" />
             <div className="absolute w-72 h-72 -top-36 -left-36 bg-secondary rounded-full blur-xl opacity-15 duration-500" />
           </div>
-          <div className="absolute bg-gradient-to-tr from-primary to-secondary w-24 h-4 rounded-2xl -bottom-2 right-24"></div>
+          <div className="absolute bg-gradient-to-tr from-primary to-secondary w-16 h-4 rounded-2xl -bottom-2 right-24"></div>
+          <div className="absolute bg-gradient-to-tr from-primary to-secondary w-24 h-4 rounded-2xl -top-2 left-24"></div>
         </div>
       </div>
     </Section>
