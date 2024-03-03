@@ -8,13 +8,15 @@ type CounterTextProps = {
   targetValue: number;
   step?: number;
   description?: string;
+  startAdornment?: ReactNode;
   endAdornment?: ReactNode;
 };
 
 export const CounterText = ({
   targetValue,
-  step = 10,
+  step = 1,
   description,
+  startAdornment,
   endAdornment,
 }: CounterTextProps) => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -31,10 +33,11 @@ export const CounterText = ({
     >
       <Text
         className={cn(
-          "whitespace-nowrap bg-gradient-to-tr from-primary-500 to-secondary-600 text-transparent bg-clip-text font-medium text-3xl sm:text-4xl",
+          "whitespace-nowrap bg-gradient-to-tr from-primary-500 via-secondary-600 to-secondary-800 text-transparent bg-clip-text font-medium text-3xl sm:text-4xl",
           value < targetValue && value > 0 && "animate-jump"
         )}
       >
+        {startAdornment}
         {value}
         {endAdornment}
       </Text>

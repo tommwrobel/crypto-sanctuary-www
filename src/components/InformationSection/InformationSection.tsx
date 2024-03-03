@@ -7,7 +7,7 @@ export const InformationSection = () => {
   const { t } = useTranslation("home");
 
   return (
-    <Section className="py-12 md:py-12 border-b border-t border-borderColor-dark">
+    <Section className="py-12 md:py-12">
       <div className="max-w-screen-xl flex flex-col gap-4 mx-auto items-start">
         <div className="px-2 py-1 rounded-lg bg-gradient-to-tr from-primary-800 to-secondary-700">
           <Text size="sm" weight="bold">

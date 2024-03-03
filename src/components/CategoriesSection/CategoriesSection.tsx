@@ -1,19 +1,11 @@
 "use client";
 import useTranslation from "next-translate/useTranslation";
-import {
-  LuAward,
-  LuCandlestickChart,
-  LuGem,
-  LuLineChart,
-  LuSearch,
-} from "react-icons/lu";
 import Trans from "next-translate/Trans";
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { DiscordIcon } from "../icons/DiscordIcon";
 import { Section } from "../Section/Section";
 import { CardButton } from "./CardButton";
-import { categories } from "./categories";
+import { useCategories } from "./useCategories";
 import { CategoryItem } from "./CategoryItem";
 import { Button, Text, Title } from "@/ui";
 
@@ -21,6 +13,7 @@ export const CategoriesSection = () => {
   const { t } = useTranslation("home");
 
   const [activeCardIndex, setActiveCardIndex] = useState(0);
+  const categories = useCategories();
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 

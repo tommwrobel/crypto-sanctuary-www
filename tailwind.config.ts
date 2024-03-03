@@ -57,6 +57,7 @@ const config: Config = {
       backgroundImage: {
         "bg-element": "url('/images/bg-element.png')",
         hero: "url('/images/hero.jpeg')",
+        "our-coin": "url('/images/our-coin-bg.png')",
       },
       keyframes: {
         wiggle: {
