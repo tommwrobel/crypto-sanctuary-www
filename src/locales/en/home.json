@@ -21,5 +21,39 @@
     "TEXT_1": "This website provides information about cryptocurrencies and entities involved in trading these digital assets. Cryptocurrencies are complex instruments and carry a high risk of monetary loss. It is important to carefully consider whether you comprehend how cryptocurrencies operate and if you can afford the high risk of losing your money.",
     "TEXT_2": "Crypto Sanctuary advises you to undertake your own research before making any investment decisions and to avoid investing in cryptocurrencies without a complete understanding of their mechanisms and the risks involved."
   },
+  "GENERAL_INFORMATION_SECTION": {
+    "TITLE": "GENERAL INFORMATION",
+    "TEXT_1": "Crypto Sanctuary goes beyond the typical signal-generating tools. We present crucial changes in price, volume, amplitudes, etc., across various categories and time intervals from different exchanges.",
+    "TEXT_2": "Is a signal in the Price Jumps or High Amplitudes category the beginning of a substantial price rally, lifting prices multiple times? Or is it a momentary pump and dump? Does a sudden volume surge indicate the awakening of a dormant gem with the potential for huge profits, or is it just a momentary spike? These are assessments you need to make. From our experience, observing these signals builds expertise. You start recognizing patterns, discovering coins with cyclical price rallies, identifying entry points, and determining where to set selling orders. Finding such coins among a thousand others is very difficult and time-consuming. Recognizing the start of their price rally on your own is practically impossible. On the other hand, we provide you with information about it within the first minute of their renewed surge through a signal from the appropriate category – that is something invaluable. And with us, you get this either for free (over half of the available categories) or for $9.9 or $14.9 per month (certain time intervals for Binance and Uniswap exchanges are available exclusively in the premium option). Kucoin exchange is entirely free.",
+    "TEXT_3": "We don't promise you'll multiply your capital several times in a few days. However, we're confident that the information we provide offers insights into all significant movements, making it easier to find coins worth trading.",
+    "TEXT_4": "By default, we've turned off notifications on our Discord (there's a lot of them, and constant alerts can be annoying). After exploring what our various categories from different exchanges and time frames offer, we suggest you decide which ones interest you and set up notifications accordingly (option available in channel settings).",
+    "TEXT_5": "We hope you'll join us and contribute to the project's development (more exchanges and a greater variety of categories coming soon:)). If you appreciate what we do, find it useful, and it helps you in trading, you can also support us by creating an account on Binance or Kucoin using our referral link. For those who do so and actively trade on such an account, in addition to the standard commission kickback, we have additional surprise rewards planned.",
+    "FOOTER_1": "Wishing you success!",
+    "FOOTER_2": "Crypto Sanctuary Team"
+  },
+  "CATEGORIES_SECTION": {
+    "TITLE": "Explore our categories",
+    "DESCRIPTION": "Explore dozens of categories with <strong>real-time signals</strong>. Click on any of them and verify on the exchange that it actually happened!",
+    "PRICE_JUMPS": {
+      "NAME": "Price jumps",
+      "DESCRIPTION": "todo"
+    },
+    "HIGH_AMPLITUDES": {
+      "NAME": "Price Amplitudes",
+      "DESCRIPTION": "todo"
+    },
+    "TOP_GAINERS_LOSERS": {
+      "NAME": "Top Gainers/Losers",
+      "DESCRIPTION": "todo"
+    },
+    "SUDDEN_VOLUME_SURGES": {
+      "NAME": "Sudden Volume Surges",
+      "DESCRIPTION": "todo"
+    },
+    "MACD": {
+      "NAME": "MACD",
+      "DESCRIPTION": "todo"
+    }
+  },
   "JOIN_OUR_DISCORD": "Join our Discord!"
 }

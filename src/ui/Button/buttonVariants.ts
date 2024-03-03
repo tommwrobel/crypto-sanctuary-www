@@ -2,7 +2,7 @@ import { cva } from "class-variance-authority";
 
 export const buttonVariants = cva(
   [
-    "transition-all inline-flex items-center justify-center whitespace-nowrap rounded-md text-md font-medium tracking-wide duration-300",
+    "transition-all inline-flex items-center justify-center whitespace-nowrap rounded-md text-md font-medium tracking-wide duration-150",
     "focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-primary/75",
     "disabled:pointer-events-none disabled:opacity-40 text-textColor-light shrink-0 active:scale-95",
   ],
@@ -11,7 +11,7 @@ export const buttonVariants = cva(
       variant: {
         default: "bg-primary hover:bg-primary-500 active:bg-primary-600",
         outline: [
-          "border-2 border-primary hover:border-primary-700 text-textColor hover:text-textColor-light active:bg-gray-600/25",
+          "border border-primary/50 hover:border-primary-500 text-textColor hover:text-textColor-light active:bg-primary/25 hover:bg-primary/15",
         ],
         danger: "bg-danger text-white hover:bg-danger-700 active:bg-danger-600",
         success:
@@ -23,7 +23,7 @@ export const buttonVariants = cva(
         ],
       },
       size: {
-        sm: "h-9 px-3 gap-2",
+        sm: "h-9 px-3 gap-2 rounded-xl",
         md: "h-12 px-4 gap-2 rounded-2xl",
         lg: "h-16 px-6 gap-3 rounded-2xl",
       },

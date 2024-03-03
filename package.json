@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
+    "framer-motion": "^11.0.3",
     "next": "14.0.4",
     "next-plugin-svgr": "^1.1.10",
     "next-translate": "^2.6.2",

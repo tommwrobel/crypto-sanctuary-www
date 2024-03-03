@@ -82,7 +82,7 @@ const config: Config = {
           "50%": {
             backgroundPosition: "center left",
           },
-        }
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
