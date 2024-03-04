@@ -8,7 +8,7 @@ export const Section = forwardRef<HTMLDivElement, SectionProps>(
     return (
       <section
         ref={ref}
-        className={cn("w-full px-8 md:px-16 py-16 md:py-24 snap-center", className)}
+        className={cn("w-full px-8 md:px-16 py-16 md:py-24", className)}
         {...props}
       >
         {children}

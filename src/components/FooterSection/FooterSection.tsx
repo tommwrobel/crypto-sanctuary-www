@@ -22,7 +22,7 @@ export const FooterSection = () => {
               <FacebookIcon />
             </Button>
           </a>
-          <a href="https://www.twitter.com/CryptoSanctuary" target="_blank">
+          <a href="https://twitter.com/CryptoSanctuar" target="_blank">
             <Button variant="ghost" className="text-xl" icon>
               <XIcon />
             </Button>

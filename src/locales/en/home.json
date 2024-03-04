@@ -60,7 +60,7 @@
       "TITLE": "Experience the thrill of trading with our High Amplitudes Categories!",
       "DESCRIPTION": {
         "TEXT_1": "Experience the thrill of trading with our High Amplitudes Categories, showcasing the most substantial price swings within specific time intervals (1 minute, 5 minutes, 15 minutes, and 1 hour). These highlight significant movements that might revert close to the starting point by the interval&apos;s end.",
-        "TEXT_2": "On Binance and Kucoin, High Amplitude Categories are categorized by pairs with BTC and USDT, and on Uniswap, they&apos;re paired with wETH.",
+        "TEXT_2": "On Binance and Kucoin, High Amplitude Categories are categorized by pairs with BTC and USDT, and on Uniswap, they are paired with wETH.",
         "TEXT_3": "Gain deeper insights into these price changes across various time intervals and observe the corresponding volume for both category types. Elevate your trading experience with comprehensive data."
       }
     },
@@ -69,7 +69,7 @@
       "TITLE": "Uncover trading opportunities with our Top Gainers/Losers category!",
       "DESCRIPTION": {
         "TEXT_1": "Uncover trading opportunities with our Top Gainers/Losers category, where we present coins that experienced the most significant price increases and decreases at the end of specific periods (ranking intervals: 1 minute, 5 minutes, 15 minutes, and 1 hour). These rankings are determined by Price Jumps.",
-        "TEXT_2": "For Binance and Kucoin, these categories are segmented into pairs with BTC and USDT, while on Uniswap, they&apos;re paired with wETH.",
+        "TEXT_2": "For Binance and Kucoin, these categories are segmented into pairs with BTC and USDT, while on Uniswap, they are paired with wETH.",
         "TEXT_3": "Explore how these price changes performed across different time intervals, coupled with insights into the volume from the specified time interval. Elevate your trading strategy with a comprehensive view of market dynamics!"
       }
     },
