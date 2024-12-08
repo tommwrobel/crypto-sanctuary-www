@@ -11,7 +11,7 @@ export const FooterSection = () => {
     <Section className="py-6 md:py-6">
       <div className="max-w-screen-xl flex flex-col gap-4 md:flex-row items-center justify-between mx-auto">
         <div>
-          <Text>
+          <Text className="text-center">
             {t("FOOTER_SECTION.COPYRIGHT", { year: new Date().getFullYear() })}
           </Text>
         </div>
@@ -22,7 +22,7 @@ export const FooterSection = () => {
               <FacebookIcon />
             </Button>
           </a>
-          <a href="https://www.twitter.com/CryptoSanctuary" target="_blank">
+          <a href="https://twitter.com/CryptoSanctuar" target="_blank">
             <Button variant="ghost" className="text-xl" icon>
               <XIcon />
             </Button>

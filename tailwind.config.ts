@@ -57,6 +57,7 @@ const config: Config = {
       backgroundImage: {
         "bg-element": "url('/images/bg-element.png')",
         hero: "url('/images/hero.jpeg')",
+        "our-coin": "url('/images/our-coin-bg.png')",
       },
       keyframes: {
         wiggle: {
@@ -67,9 +68,27 @@ const config: Config = {
             transform: "rotate(12deg)",
           },
         },
+        jump: {
+          "0%, 100%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.2)",
+          },
+        },
+        bgWiggle: {
+          "0%, 100%": {
+            backgroundPosition: "top right",
+          },
+          "50%": {
+            backgroundPosition: "center left",
+          },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
+        bgWiggle: "bgWiggle 20s ease-in-out infinite",
+        jump: "jump 300ms ease-in-out infinite",
       },
     },
   },
