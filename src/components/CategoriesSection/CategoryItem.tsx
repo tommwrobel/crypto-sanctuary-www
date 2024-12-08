@@ -3,17 +3,19 @@ import { Title, cn } from "@/ui";
 
 type CategoryItemProps = HTMLAttributes<HTMLDivElement> & {
   img: ReactNode;
+  icon: ReactNode;
   header: ReactNode;
 };
 
 export const CategoryItem = ({
   img,
+  icon,
   header,
   children,
   ...props
 }: CategoryItemProps) => {
   return (
-    <div className="w-full">
+    <div className="w-full lg:w-10/12 lg:mx-auto">
       <div
         {...props}
         className={cn(
@@ -21,10 +23,11 @@ export const CategoryItem = ({
           props.className
         )}
       >
-        <div className="w-72 lg:w-96 h-full flex justify-center shrink-0">
+        {/* <div className="w-72 lg:w-96 h-full flex justify-center shrink-0">
           {img}
-        </div>
+        </div> */}
         <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 text-3xl text-secondary">{icon}</div>
           <Title size="xl" className="text-center md:text-left">
             {header}
           </Title>

@@ -75,6 +75,7 @@ export const CategoriesSection = () => {
               onMouseLeave={handleOnMouseLeave}
               header={categories[activeCardIndex].title}
               img={categories[activeCardIndex].img}
+              icon={categories[activeCardIndex].icon}
             >
               {categories[activeCardIndex].content}
             </CategoryItem>
